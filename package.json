@@ -1,0 +1,18 @@
+{
+  "name": "lemoncode-bundling-webpack",
+  "version": "1.0.0",
+  "description": "Webpack Exercise | Module III: Bundling | Master in Front-End Development by Lemoncode ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bundling",
+    "webpack",
+    "javascript",
+    "typescript",
+    "babel"
+  ],
+  "author": "zaretmir",
+  "license": "ISC"
+}
