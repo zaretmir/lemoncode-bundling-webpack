@@ -14,5 +14,9 @@
     "babel"
   ],
   "author": "zaretmir",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  }
 }
