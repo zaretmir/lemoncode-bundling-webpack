@@ -6,7 +6,7 @@ const path = require('path');
 module.exports = {
     entry: {
         app: './src/index.js',
-        appStyles: './src/styles.css',
+        appStyles: './src/styles.scss',
     },
     output: {
         filename: "[name].[chunkhash].js",
@@ -15,9 +15,18 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 exclude: /node_modules/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                        },
+                    },
+                ],
             }
         ],
     },
