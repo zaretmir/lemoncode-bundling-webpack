@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        app: './src/index.js',
+        app: './src/index.ts',
         appStyles: './src/styles.scss',
     },
     output: {
@@ -16,7 +16,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|ts)$/,
                 loader: 'babel-loader',
             },
             {
