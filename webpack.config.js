@@ -11,6 +11,7 @@ module.exports = {
     output: {
         filename: "[name].[chunkhash].js",
         path: path.resolve(process.cwd(), 'dist'),
+        publicPath: "/",
     },
     module: {
         rules: [
@@ -27,7 +28,15 @@ module.exports = {
                         },
                     },
                 ],
-            }
+            },
+            {
+                test: /\.(png|jpg)$/,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader',
+            },
         ],
     },
     plugins: [
