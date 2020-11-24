@@ -4,6 +4,7 @@
   "description": "Webpack Exercise | Module III: Bundling | Master in Front-End Development by Lemoncode ",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "author": "zaretmir",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
     "webpack": "^5.6.0",
     "webpack-cli": "^4.2.0"
   }
