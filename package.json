@@ -4,6 +4,7 @@
   "description": "Webpack Exercise | Module III: Bundling | Master in Front-End Development by Lemoncode ",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve --mode development",
     "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,6 +32,7 @@
     "sass-loader": "^10.1.0",
     "typescript": "^4.1.2",
     "webpack": "^5.6.0",
-    "webpack-cli": "^4.2.0"
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
